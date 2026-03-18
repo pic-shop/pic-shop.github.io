@@ -125,6 +125,25 @@
         }
         button.parent().parent().find('input').val(newVal);
     });
+
+    $(document).ready(function () {
+
+    $('.product-main-slider').owlCarousel({
+        items: 1,
+        loop: true,
+        nav: true,
+        dots: false, // 👈 ajoute les petits points (option UX pro)
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true,
+        smartSpeed: 600,
+        navText: [
+            '<i class="fas fa-chevron-left"></i>',
+            '<i class="fas fa-chevron-right"></i>'
+        ]
+    });
+
+});
     
 })(jQuery);
 
